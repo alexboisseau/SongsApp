@@ -7,22 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FCC4DC2C2798199700FB0091 /* SongsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4DC2B2798199700FB0091 /* SongsApp.swift */; };
-		FCC4DC2E2798199700FB0091 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4DC2D2798199700FB0091 /* ContentView.swift */; };
-		FCC4DC302798199900FB0091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC4DC2F2798199900FB0091 /* Assets.xcassets */; };
-		FCC4DC332798199900FB0091 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC4DC322798199900FB0091 /* Preview Assets.xcassets */; };
-		FCC4DC352798199900FB0091 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4DC342798199900FB0091 /* Persistence.swift */; };
-		FCC4DC382798199900FB0091 /* Songs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCC4DC362798199900FB0091 /* Songs.xcdatamodeld */; };
+		FC3FE58E27986FD00017C571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC4DC2F2798199900FB0091 /* Assets.xcassets */; };
+		FC3FE58F27986FD00017C571 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC4DC322798199900FB0091 /* Preview Assets.xcassets */; };
+		FCDDFBBF27986EF500E0F94F /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4DC422798236A00FB0091 /* TabBar.swift */; };
+		FCDDFBC127986F0F00E0F94F /* ArtistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D614827986A13003D4BA7 /* ArtistsView.swift */; };
+		FCDDFBC227986F0F00E0F94F /* ArtistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D614A27986A7D003D4BA7 /* ArtistsViewModel.swift */; };
+		FCDDFBC327986F0F00E0F94F /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4DC4C2798248000FB0091 /* FavoritesView.swift */; };
+		FCDDFBC427986F0F00E0F94F /* SongDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4DC4A2798245400FB0091 /* SongDetailView.swift */; };
+		FCDDFBC527986F0F00E0F94F /* AddSongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEBD8412798473600DB4962 /* AddSongViewModel.swift */; };
+		FCDDFBC627986F0F00E0F94F /* AddSongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4DC4F2798285500FB0091 /* AddSongView.swift */; };
+		FCDDFBC727986F0F00E0F94F /* AddArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4DC512798287B00FB0091 /* AddArtistView.swift */; };
+		FCDDFBC827986F0F00E0F94F /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4DC5327982DEB00FB0091 /* RatingView.swift */; };
+		FCDDFBC927986F0F00E0F94F /* SongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4DC482798241800FB0091 /* SongsView.swift */; };
+		FCDDFBCA27986F0F00E0F94F /* SongsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEBD83F279844AC00DB4962 /* SongsViewModel.swift */; };
+		FCDDFBCB27986F0F00E0F94F /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4DC342798199900FB0091 /* DBManager.swift */; };
+		FCDF5A87279873230093A61D /* Songs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCC4DC362798199900FB0091 /* Songs.xcdatamodeld */; };
+		FCDF5A88279873400093A61D /* SongsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4DC2B2798199700FB0091 /* SongsApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC0D614827986A13003D4BA7 /* ArtistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsView.swift; sourceTree = "<group>"; };
+		FC0D614A27986A7D003D4BA7 /* ArtistsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsViewModel.swift; sourceTree = "<group>"; };
 		FCC4DC282798199700FB0091 /* Songs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Songs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC4DC2B2798199700FB0091 /* SongsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsApp.swift; sourceTree = "<group>"; };
-		FCC4DC2D2798199700FB0091 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FCC4DC2F2798199900FB0091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCC4DC322798199900FB0091 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FCC4DC342798199900FB0091 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		FCC4DC342798199900FB0091 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		FCC4DC372798199900FB0091 /* Songs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Songs.xcdatamodel; sourceTree = "<group>"; };
+		FCC4DC422798236A00FB0091 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		FCC4DC482798241800FB0091 /* SongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsView.swift; sourceTree = "<group>"; };
+		FCC4DC4A2798245400FB0091 /* SongDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailView.swift; sourceTree = "<group>"; };
+		FCC4DC4C2798248000FB0091 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		FCC4DC4F2798285500FB0091 /* AddSongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSongView.swift; sourceTree = "<group>"; };
+		FCC4DC512798287B00FB0091 /* AddArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArtistView.swift; sourceTree = "<group>"; };
+		FCC4DC5327982DEB00FB0091 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		FCEBD83F279844AC00DB4962 /* SongsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsViewModel.swift; sourceTree = "<group>"; };
+		FCEBD8412798473600DB4962 /* AddSongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddSongViewModel.swift; path = ../../../AddSongViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC0D6147279869F6003D4BA7 /* Artists */ = {
+			isa = PBXGroup;
+			children = (
+				FC0D614827986A13003D4BA7 /* ArtistsView.swift */,
+				FC0D614A27986A7D003D4BA7 /* ArtistsViewModel.swift */,
+			);
+			path = Artists;
+			sourceTree = "<group>";
+		};
 		FCC4DC1F2798199700FB0091 = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +84,14 @@
 		FCC4DC2A2798199700FB0091 /* Songs */ = {
 			isa = PBXGroup;
 			children = (
-				FCC4DC2B2798199700FB0091 /* SongsApp.swift */,
-				FCC4DC2D2798199700FB0091 /* ContentView.swift */,
-				FCC4DC2F2798199900FB0091 /* Assets.xcassets */,
-				FCC4DC342798199900FB0091 /* Persistence.swift */,
-				FCC4DC362798199900FB0091 /* Songs.xcdatamodeld */,
+				FC0D6147279869F6003D4BA7 /* Artists */,
+				FCC4DC47279823FC00FB0091 /* Favorites */,
+				FCC4DC46279823F300FB0091 /* SongDetail */,
+				FCC4DC45279823ED00FB0091 /* Songs */,
+				FCC4DC41279822D600FB0091 /* Managers */,
+				FCC4DC4027981CE900FB0091 /* Models */,
+				FCC4DC3F27981C3900FB0091 /* Main */,
+				FCC4DC3E27981C2600FB0091 /* Resources */,
 				FCC4DC312798199900FB0091 /* Preview Content */,
 			);
 			path = Songs;
@@ -71,6 +103,76 @@
 				FCC4DC322798199900FB0091 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FCC4DC3E27981C2600FB0091 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FCC4DC2F2798199900FB0091 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FCC4DC3F27981C3900FB0091 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FCC4DC2B2798199700FB0091 /* SongsApp.swift */,
+				FCC4DC422798236A00FB0091 /* TabBar.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FCC4DC4027981CE900FB0091 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCC4DC362798199900FB0091 /* Songs.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FCC4DC41279822D600FB0091 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FCC4DC342798199900FB0091 /* DBManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FCC4DC45279823ED00FB0091 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				FCC4DC4E2798284500FB0091 /* Add */,
+				FCC4DC5327982DEB00FB0091 /* RatingView.swift */,
+				FCC4DC482798241800FB0091 /* SongsView.swift */,
+				FCEBD83F279844AC00DB4962 /* SongsViewModel.swift */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
+		FCC4DC46279823F300FB0091 /* SongDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FCC4DC4A2798245400FB0091 /* SongDetailView.swift */,
+			);
+			path = SongDetail;
+			sourceTree = "<group>";
+		};
+		FCC4DC47279823FC00FB0091 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				FCC4DC4C2798248000FB0091 /* FavoritesView.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		FCC4DC4E2798284500FB0091 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				FCEBD8412798473600DB4962 /* AddSongViewModel.swift */,
+				FCC4DC4F2798285500FB0091 /* AddSongView.swift */,
+				FCC4DC512798287B00FB0091 /* AddArtistView.swift */,
+			);
+			path = Add;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +233,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCC4DC332798199900FB0091 /* Preview Assets.xcassets in Resources */,
-				FCC4DC302798199900FB0091 /* Assets.xcassets in Resources */,
+				FC3FE58E27986FD00017C571 /* Assets.xcassets in Resources */,
+				FC3FE58F27986FD00017C571 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,10 +245,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCC4DC382798199900FB0091 /* Songs.xcdatamodeld in Sources */,
-				FCC4DC352798199900FB0091 /* Persistence.swift in Sources */,
-				FCC4DC2E2798199700FB0091 /* ContentView.swift in Sources */,
-				FCC4DC2C2798199700FB0091 /* SongsApp.swift in Sources */,
+				FCDF5A88279873400093A61D /* SongsApp.swift in Sources */,
+				FCDF5A87279873230093A61D /* Songs.xcdatamodeld in Sources */,
+				FCDDFBC127986F0F00E0F94F /* ArtistsView.swift in Sources */,
+				FCDDFBC227986F0F00E0F94F /* ArtistsViewModel.swift in Sources */,
+				FCDDFBC327986F0F00E0F94F /* FavoritesView.swift in Sources */,
+				FCDDFBC427986F0F00E0F94F /* SongDetailView.swift in Sources */,
+				FCDDFBC527986F0F00E0F94F /* AddSongViewModel.swift in Sources */,
+				FCDDFBC627986F0F00E0F94F /* AddSongView.swift in Sources */,
+				FCDDFBC727986F0F00E0F94F /* AddArtistView.swift in Sources */,
+				FCDDFBC827986F0F00E0F94F /* RatingView.swift in Sources */,
+				FCDDFBC927986F0F00E0F94F /* SongsView.swift in Sources */,
+				FCDDFBCA27986F0F00E0F94F /* SongsViewModel.swift in Sources */,
+				FCDDFBCB27986F0F00E0F94F /* DBManager.swift in Sources */,
+				FCDDFBBF27986EF500E0F94F /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +402,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexboisseau..Songs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexboisseau.Songs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -319,7 +431,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexboisseau..Songs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexboisseau.Songs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
