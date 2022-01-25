@@ -23,8 +23,18 @@ struct AddSongView: View {
                 }
                 
                 Section{
-                    NavigationLink(viewModel.artist?.firstName ?? "Add artist") {
+                    NavigationLink {
                         AddArtistView(artist: $viewModel.artist)
+                    } label: {
+                        HStack {
+                            Text("Add an artist")
+                            if viewModel.artist?.firstName != nil {
+                                Spacer()
+                                Text(viewModel.artist!.firstName!)
+                                    .font(.body)
+                                    .foregroundColor(.gray)
+                            }
+                        }
                     }
                 } header: {
                     Text("Artist")

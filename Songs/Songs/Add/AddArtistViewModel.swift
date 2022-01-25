@@ -35,9 +35,13 @@ class AddArtistViewModel: ObservableObject {
         
         switch artistResult {
         case .success(let artist):
-            handleAlert(title: "OK ✅", message: "\(artist.firstName ?? "") \(artist.lastName ?? "") added")
+            if let firstName = artist.firstName, let lastName = artist.lastName {
+                handleAlert(title: "Success ✨", message: "\(firstName) \(lastName) added")
+            } else {
+                handleAlert(title: "Success ✨", message: "A new artist was added")
+            }
         case .failure(let error):
-            handleAlert(title: "ERROR ❌", message: error.localizedDescription)
+            handleAlert(title: "Oups ... Something went wrong", message: error.localizedDescription)
         }
     }
     

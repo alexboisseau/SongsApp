@@ -11,6 +11,8 @@ struct AddArtistView: View {
     @ObservedObject private var viewModel = AddArtistViewModel()
     @Binding var artist: Artist?
     
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
             Form {
                 Section {
@@ -49,6 +51,7 @@ struct AddArtistView: View {
                                     if let firstName = art.firstName, let lastName = art.lastName {
                                         Button {
                                             artist = art
+                                            presentationMode.wrappedValue.dismiss()
                                         } label: {
                                             HStack(spacing: 10) {
                                                 AsyncImage(url: art.avatarURL!) { phase in
