@@ -25,12 +25,13 @@ struct DBManager {
         })
     }
     
-    // MARK : - Songs
-    func getAllSongs() -> Result<[Song], Error> {
+    // MARK: - Songs
+    func getAllSongs(predicate: NSPredicate? = nil) -> Result<[Song], Error> {
         let fetchRequest = Song.fetchRequest()
         let descriptor = NSSortDescriptor(key: "releaseDate", ascending: true)
         
         fetchRequest.sortDescriptors = [descriptor]
+        fetchRequest.predicate = predicate
         
         let context = container.viewContext
         
@@ -54,25 +55,29 @@ struct DBManager {
     }
     
     @discardableResult
+    func updateSong(song: Song) -> Result<Song, Error> {
+        let context = container.viewContext
+        
+        do {
+            try context.save()
+            return .success(song)
+        } catch {
+            return .failure(error)
+        }
+    }
+    
+    @discardableResult
     func addSong(
         coverURL: URL,
         lyrics: String?,
         title: String,
         rate: Int64,
         releaseDate: Date,
-        isFavorite: Bool = false
+        isFavorite: Bool = false,
+        artist: Artist
     ) -> Result<Song, Error> {
         let context = container.viewContext
-        
-        // DUMMY DATA
-        let artistsRes = getAllArtists()
-        let artist: Artist?
-        
-        switch artistsRes {
-        case .failure(let error): artist = nil
-        case .success(let artists): artist = artists.first
-        }
-        
+                
         let song = Song(entity: Song.entity(), insertInto: DBManager.shared.container.viewContext)
         
         song.title = title
@@ -106,7 +111,7 @@ struct DBManager {
         }
     }
     
-    // MARK : - Artist
+    // MARK: - Artist
     
     @discardableResult
     func addArtist(

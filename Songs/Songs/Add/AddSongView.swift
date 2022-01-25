@@ -22,13 +22,10 @@ struct AddSongView: View {
                     Text("Song")
                 }
                 
-                Section {
-                    NavigationLink {
-                        AddArtistView()
-                    } label: {
-                        Label("Add artist", systemImage: "person.fill")
+                Section{
+                    NavigationLink(viewModel.artist?.firstName ?? "Add artist") {
+                        AddArtistView(artist: $viewModel.artist)
                     }
-
                 } header: {
                     Text("Artist")
                 }
@@ -52,6 +49,12 @@ struct AddSongView: View {
                     }
                 }
             }
+            .onAppear(perform: {
+                if viewModel.artist != nil {
+                    let songArtist = viewModel.artist!
+                    print(songArtist.firstName!)
+                }
+            })
             .navigationTitle("Add Song")
             .navigationBarTitleDisplayMode(.inline)
             .alert(viewModel.alertTitle, isPresented: $viewModel.showAlert, actions: {

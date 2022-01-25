@@ -18,7 +18,7 @@ struct TabBar: View {
             }.tag(0)
             
             FavoritesView().tabItem {
-                Label("Favorites", systemImage: "star")
+                Label("Favorites", systemImage: "heart")
             }
         }.onAppear {
             DispatchQueue.main.async {
