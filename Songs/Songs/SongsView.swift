@@ -22,8 +22,7 @@ struct SongsView: View {
                 .navigationBarItems(
                     trailing:
                         Button {
-                            viewModel.showAddSongView = true
-                            viewModel.showSheet.toggle()
+                            viewModel.showAddSongView.toggle()
                         } label: {
                             Image(systemName: "plus")
                         }
@@ -32,31 +31,18 @@ struct SongsView: View {
             } else {
                 List {
                     ForEach(viewModel.songs) { song in
-                        if let title = song.title {
-                            Button {
-                                // SHOW SONG INFORMATIONS
-                                viewModel.selectedSong = song
-                                viewModel.showSongInformations = true
-                                viewModel.showSheet.toggle()
-                            } label: {
-                                HStack {
-                                    VStack(alignment: .leading) {
-                                        Text(title)
-                                        Text(song.artist?.firstName ?? "No artist")
-                                            .font(.caption)
-                                    }
-                                    Spacer()
-                                    Button {
-                                        viewModel.toggleIsFavoriteSongProperty(song: song)
-                                        viewModel.fetchSongs()
-                                    } label: {
-                                        Image(systemName: song.isFavorite ? "heart.fill" : "heart")
-                                    }
-                                    .foregroundColor(.accentColor)
+                        NavigationLink {
+                            SongDetailView(viewModel: SongDetailViewModel(song: song))
+                        } label: {
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text(song.title!)
+                                    Text(song.artist?.firstName ?? "No artist")
+                                        .font(.caption)
                                 }
                             }
-                            .foregroundColor(.primary)
                         }
+
                         
                     }.onDelete { offsets in
                         viewModel.deleteSong(at: offsets)
@@ -68,25 +54,17 @@ struct SongsView: View {
                 .navigationBarItems(
                     trailing:
                         Button {
-                            viewModel.showAddSongView = true
-                            viewModel.showSheet.toggle()
+                            viewModel.showAddSongView.toggle()
                         } label: {
                             Image(systemName: "plus")
                         }
                 )
             }
         }
-        .sheet(isPresented: $viewModel.showSheet) {
-            viewModel.showSongInformations = false
-            viewModel.showAddSongView = false
-            
+        .sheet(isPresented: $viewModel.showAddSongView) {
             viewModel.fetchSongs()
         } content: {
-            if viewModel.showAddSongView {
-                AddSongView()
-            } else {
-                SongDetailView(song: $viewModel.selectedSong)
-            }
+            AddSongView()
             
         }
         .onAppear {

@@ -23,6 +23,7 @@
 		FCDDFBCB27986F0F00E0F94F /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4DC342798199900FB0091 /* DBManager.swift */; };
 		FCDF5A87279873230093A61D /* Songs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCC4DC362798199900FB0091 /* Songs.xcdatamodeld */; };
 		FCDF5A88279873400093A61D /* SongsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4DC2B2798199700FB0091 /* SongsApp.swift */; };
+		FCE932F427A06A0B00A8D91C /* SongDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE932F327A06A0B00A8D91C /* SongDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		FCC4DC4F2798285500FB0091 /* AddSongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSongView.swift; sourceTree = "<group>"; };
 		FCC4DC512798287B00FB0091 /* AddArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArtistView.swift; sourceTree = "<group>"; };
 		FCC4DC5327982DEB00FB0091 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		FCE932F327A06A0B00A8D91C /* SongDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailViewModel.swift; sourceTree = "<group>"; };
 		FCEBD83F279844AC00DB4962 /* SongsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsViewModel.swift; sourceTree = "<group>"; };
 		FCEBD8412798473600DB4962 /* AddSongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddSongViewModel.swift; path = ../../../AddSongViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				FCC4DC4A2798245400FB0091 /* SongDetailView.swift */,
+				FCE932F327A06A0B00A8D91C /* SongDetailViewModel.swift */,
 			);
 			path = SongDetail;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				FC272B66279D64EE00774C04 /* AddArtistViewModel.swift in Sources */,
 				FCDDFBCA27986F0F00E0F94F /* SongsViewModel.swift in Sources */,
 				FCDDFBCB27986F0F00E0F94F /* DBManager.swift in Sources */,
+				FCE932F427A06A0B00A8D91C /* SongDetailViewModel.swift in Sources */,
 				FCDDFBBF27986EF500E0F94F /* TabBar.swift in Sources */,
 				FC4BC093279C6A8900B78410 /* FavoritesViewModel.swift in Sources */,
 			);
