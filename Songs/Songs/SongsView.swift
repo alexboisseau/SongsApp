@@ -33,7 +33,8 @@ struct SongsView: View {
                     ForEach(viewModel.songs) { song in
                         NavigationLink {
                             SongDetailView(viewModel: SongDetailViewModel(song: song))
-                        } label: {
+                        }
+                        label: {
                             HStack {
                                 VStack(alignment: .leading) {
                                     Text(song.title!)

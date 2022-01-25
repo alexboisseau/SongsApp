@@ -10,7 +10,7 @@ import SwiftUI
 class AddSongViewModel: ObservableObject {
     @Published var songTitle = ""
     @Published var releaseDate = Date()
-    @Published var rate = 3
+    @Published var rate: Int64 = 3
     @Published var isFavorite = false
     @Published var showAlert = false
     @Published var alertMessage: String = ""
@@ -22,10 +22,10 @@ class AddSongViewModel: ObservableObject {
         
         if let unwrappedArtist = artist {
             let songResult = DBManager.shared.addSong(
-                coverURL: URL(string: "https://api.lorem.space/image/album")!,
+                coverURL: URL(string: "https://api.lorem.space/image/album?w=150&h=150")!,
                 lyrics: "bla bla bla",
                 title: songTitle,
-                rate: Int64(rate),
+                rate: rate,
                 releaseDate: releaseDate,
                 isFavorite: isFavorite,
                 artist: unwrappedArtist

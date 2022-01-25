@@ -9,9 +9,9 @@ import SwiftUI
 
 struct RatingView: View {
     var title: String?
-    @Binding var rating: Int
+    @Binding var rating: Int64
     
-    private let maximumRating = 5
+    private let maximumRating: Int64 = 5
     private let offColor = Color.gray
     private let onColor = Color.accentColor
 

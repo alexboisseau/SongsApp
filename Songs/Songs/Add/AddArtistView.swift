@@ -66,10 +66,6 @@ struct AddArtistView: View {
                                                     case .failure:
                                                         Image(systemName: "photo")
                                                     @unknown default:
-                                                        // Since the AsyncImagePhase enum isn't frozen,
-                                                        // we need to add this currently unused fallback
-                                                        // to handle any new cases that might be added
-                                                        // in the future:
                                                         EmptyView()
                                                     }
                                                 }
